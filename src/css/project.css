@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "Inconsolata", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+   
+    
+    
+}
+
+.navigation {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+   
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.text-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+     background-color: white;
+}
+
+.video {
+    flex: 1 1 300px;
+    max-width: 45%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+}
+
+.video .vid {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+   
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer div {
+    margin-top: 10px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+        display: none;
+        height: 500pc
+    }
+
+    .navigation ul li {
+        margin: 0;
+    }
+
+    .navigation ul li a {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu-container {
+        display: flex;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        color: white;
+        margin-left: 400px;
+        font-size: 24px;
+    }
+
+    .menu-container {
+        display: block; /* Show the icon container only on small screens */
+    }
+
+    /* Hide menu icon on larger screens */
+    @media (min-width: 769px) {
+        .menu-container {
+            display: none;
+            
+        }
+    }
+    
+    .video {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+#tt{
+    display: flex;
+    justify-content: center;
+}
